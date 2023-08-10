@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 3001;
 const fs = require('fs');
 const { promisify } = require('util');
 const pipeline = promisify(require('stream').pipeline);
@@ -178,6 +179,6 @@ app.post('/api', async (req, res) => {
         })
 })
 
-app.listen(4000, (req, res) => {
-    console.log("Server is running " + 4000);
+app.listen(port, (req, res) => {
+    console.log(`Server is running at ${port}`);
 })
