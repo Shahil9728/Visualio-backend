@@ -45,6 +45,9 @@ app.get('/api1', (req, res) => {
     res.json("Hello Bhadwe");
 })
 
+app.get('/',(req,res)=>{
+    res.json("Server is running")
+})
 
 
 
