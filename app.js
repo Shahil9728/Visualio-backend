@@ -43,7 +43,7 @@ app.post('/getscript', async (req, res) => {
 })
 
 app.get('/api1', (req, res) => {
-    res.json("Hello Bhadwe");
+    res.json("Hello api is running.");
 })
 
 app.get('/',(req,res)=>{
